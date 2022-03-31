@@ -1,10 +1,10 @@
 package demo
 
 import (
+	"chenwlnote.gin-api/app/dao/repository"
+	"chenwlnote.gin-api/app/pkg/database"
+	"chenwlnote.gin-api/app/response"
 	"encoding/json"
-	"fun.tvapi/app/dao/repository"
-	"fun.tvapi/app/pkg/database"
-	"fun.tvapi/app/response"
 	"github.com/gin-gonic/gin"
 	"time"
 )

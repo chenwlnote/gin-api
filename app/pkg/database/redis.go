@@ -1,7 +1,7 @@
 package database
 
 import (
-	"fun.tvapi/app/provider/app/config"
+	"chenwlnote.gin-api/app/provider/app/config"
 	"github.com/gomodule/redigo/redis"
 	"math/rand"
 	"strconv"

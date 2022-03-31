@@ -3,7 +3,7 @@ package errno
 import (
 	"encoding/json"
 
-	"fun.tvapi/pkg/errors"
+	"chenwlnote.gin-api/pkg/errors"
 )
 
 var _ Error = (*err)(nil)

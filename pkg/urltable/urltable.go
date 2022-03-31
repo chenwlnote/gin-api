@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"strings"
 
-	"fun.tvapi/pkg/errors"
+	"chenwlnote.gin-api/pkg/errors"
 )
 
 const (

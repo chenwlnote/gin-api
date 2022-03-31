@@ -1,7 +1,7 @@
 package router
 
 import (
-	v1 "fun.tvapi/router/v1"
+	v1 "chenwlnote.gin-api/router/v1"
 	"github.com/gin-gonic/gin"
 )
 

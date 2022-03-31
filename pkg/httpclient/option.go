@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	"fun.tvapi/pkg/trace"
+	"chenwlnote.gin-api/pkg/trace"
 
 	"go.uber.org/zap"
 )

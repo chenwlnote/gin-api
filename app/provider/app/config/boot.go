@@ -1,9 +1,9 @@
 package config
 
 import (
+	"chenwlnote.gin-api/app/provider/app"
 	"encoding/json"
 	"fmt"
-	"fun.tvapi/app/provider/app"
 	"github.com/spf13/viper"
 	"time"
 )

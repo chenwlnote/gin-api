@@ -1,11 +1,11 @@
 package repository
 
 import (
+	"chenwlnote.gin-api/app/dao/model/media"
+	"chenwlnote.gin-api/app/pkg/database"
+	"chenwlnote.gin-api/app/pkg/logger"
+	"chenwlnote.gin-api/app/pkg/util/convert"
 	"database/sql"
-	"fun.tvapi/app/dao/model/media"
-	"fun.tvapi/app/pkg/database"
-	"fun.tvapi/app/pkg/logger"
-	"fun.tvapi/app/pkg/util/convert"
 	"strings"
 )
 

@@ -1,7 +1,7 @@
 package v1
 
 import (
-	DemoToolController "fun.tvapi/app/controller/tool/demo"
+	DemoToolController "chenwlnote.gin-api/app/controller/tool/demo"
 	"github.com/gin-gonic/gin"
 )
 

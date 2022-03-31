@@ -1,9 +1,9 @@
 package middleware
 
 import (
+	"chenwlnote.gin-api/app/exception"
+	"chenwlnote.gin-api/app/response"
 	"encoding/json"
-	"fun.tvapi/app/exception"
-	"fun.tvapi/app/response"
 	"github.com/gin-gonic/gin"
 	"log"
 )

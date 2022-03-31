@@ -1,9 +1,9 @@
 package httpserver
 
 import (
+	"chenwlnote.gin-api/app/provider/app/config"
 	"context"
 	"fmt"
-	"fun.tvapi/app/provider/app/config"
 	"github.com/facebookgo/grace/gracehttp"
 	"golang.org/x/sync/errgroup"
 	"log"
@@ -54,7 +54,7 @@ func Start() {
 		// kill (no param) default send syscall.SIGTERM
 		// kill -2 is syscall.SIGINT
 		// kill -9 is syscall.SIGKILL but can't be caught, so don't need to add it
-		signal.Notify(quit, syscall.SIGINT, syscall.SIGTERM)
+		signal.Notify(quit, syscall.SIGINT, syscall.SIGTERM, syscall.SIGKILL)
 		<-quit
 		log.Println("Shutting down server...")
 

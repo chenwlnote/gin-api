@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"fun.tvapi/pkg/trace"
+	"chenwlnote.gin-api/pkg/trace"
 )
 
 type Option func(*option)

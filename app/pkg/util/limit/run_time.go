@@ -1,7 +1,7 @@
 package limit
 
 import (
-	"fun.tvapi/app/exception"
+	"chenwlnote.gin-api/app/exception"
 	"time"
 )
 

@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"fun.tvapi/pkg/errors"
-	"fun.tvapi/pkg/time_parse"
+	"chenwlnote.gin-api/pkg/errors"
+	"chenwlnote.gin-api/pkg/time_parse"
 )
 
 func (s *signature) Verify(authorization, date string, path string, method string, params url.Values) (ok bool, err error) {

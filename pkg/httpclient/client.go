@@ -8,8 +8,8 @@ import (
 	httpURL "net/url"
 	"time"
 
-	"fun.tvapi/pkg/errors"
-	"fun.tvapi/pkg/trace"
+	"chenwlnote.gin-api/pkg/errors"
+	"chenwlnote.gin-api/pkg/trace"
 )
 
 const (

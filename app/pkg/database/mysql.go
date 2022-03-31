@@ -1,9 +1,9 @@
 package database
 
 import (
+	"chenwlnote.gin-api/app/pkg/logger"
+	"chenwlnote.gin-api/app/provider/app/config"
 	"database/sql"
-	"fun.tvapi/app/pkg/logger"
-	"fun.tvapi/app/provider/app/config"
 	_ "github.com/go-sql-driver/mysql"
 	"math/rand"
 	"strconv"

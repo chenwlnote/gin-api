@@ -9,8 +9,8 @@ import (
 	"net/url"
 	"strings"
 
-	"fun.tvapi/pkg/errors"
-	"fun.tvapi/pkg/time_parse"
+	"chenwlnote.gin-api/pkg/errors"
+	"chenwlnote.gin-api/pkg/time_parse"
 )
 
 // Generate

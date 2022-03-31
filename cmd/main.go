@@ -1,11 +1,11 @@
 package main
 
 import (
-	"fun.tvapi/app/provider/app"
-	"fun.tvapi/app/provider/app/config"
-	"fun.tvapi/app/provider/app/console"
-	"fun.tvapi/app/provider/app/log"
-	"fun.tvapi/app/provider/httpserver"
+	"chenwlnote.gin-api/app/provider/app"
+	"chenwlnote.gin-api/app/provider/app/config"
+	"chenwlnote.gin-api/app/provider/app/console"
+	"chenwlnote.gin-api/app/provider/app/log"
+	"chenwlnote.gin-api/app/provider/httpserver"
 )
 
 func init() {

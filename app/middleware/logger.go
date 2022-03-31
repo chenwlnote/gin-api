@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"fun.tvapi/app/provider/app/log"
+	"chenwlnote.gin-api/app/provider/app/log"
 	"github.com/gin-gonic/gin"
 	"time"
 )

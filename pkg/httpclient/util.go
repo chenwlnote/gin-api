@@ -9,7 +9,7 @@ import (
 	"net/url"
 	"time"
 
-	"fun.tvapi/pkg/trace"
+	"chenwlnote.gin-api/pkg/trace"
 
 	"github.com/pkg/errors"
 	"go.uber.org/zap"

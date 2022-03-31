@@ -1,9 +1,9 @@
 package middleware
 
 import (
+	"chenwlnote.gin-api/app/pkg/util/limit"
+	"chenwlnote.gin-api/app/response"
 	"fmt"
-	"fun.tvapi/app/pkg/util/limit"
-	"fun.tvapi/app/response"
 	"github.com/gin-gonic/gin"
 	"time"
 )
