@@ -1,7 +1,7 @@
-# tvapi
+# gin-api
 
 ## 项目说明
-tvapi go 重构项目，项目模块命名fun.tvapi
+个人爱好
 
 ## 相关文档
 
