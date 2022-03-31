@@ -22,6 +22,9 @@ export GOPATH="/data/gopath"
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin:$GOPATH
 
+修改代理
+go env -w GOPROXY=https://goproxy.cn,direct
+
 查看golang部署环境
 go env
 
@@ -67,18 +70,20 @@ E:\Code\Go\pkg\mod\github.com\facebookgo\grace@v0.0.0-20180706040059-75cf1938243
 
 ```
 
-### 依赖包下载失败
+### 修改代理后依赖包下载失败
 golang在github上建立了一个镜像库，如https://github.com/golang/net就对应是 https://golang.org/x/net的镜像库。 要下载golang.org/x/net包，可以在本地创建包的目录后使用git clone来拉取相应包的源代码文件，具体操作如下
 
 ```shell
 
 mkdir -p $GOPATH/src/golang.org/x
 cd $GOPATH/src/golang.org/x
-git clone https://github.com/golang/net.git
+git clone https://github.com/chenwlnote/net.git
 
 安装gopm
 
 go get -u github.com/gpmgo/gopm
+或
+go get -u github.com/chenwlnote/gopm
 
 使用gopm安装第三方包
 
