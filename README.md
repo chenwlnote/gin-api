@@ -54,7 +54,7 @@ go install main.go 或者 go install
 go run cmd/main.go start dev
 
 项目打包及重命名
-go build -v -x -o gin-api-pro bin
+go build -x -v -o bin/gin-api-dev cmd/main.go
 
 ```
 
