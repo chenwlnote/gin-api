@@ -1,0 +1,84 @@
+{
+  "http_server": {
+    "addr": "127.0.0.1:8889",
+    "http_pid_file": "storage/tvapi.pid"
+  },
+  "database": {
+    "mysql": {
+      "read": [
+        {
+          "host": "192.168.8.100",
+          "port": 63306,
+          "username": "yan",
+          "password": "nihao123!",
+          "database_config": [
+            {"alias": "media", "name": "db_jupiter_media", "charset": "utf8"},
+            {"alias": "fun_edu", "name": "db_fun_edu", "charset": "utf8mb4"},
+            {"alias": "video", "name": "db_jupiter_video", "charset": "utf8"},
+            {"alias": "operation", "name": "db_jupiter_operation", "charset": "utf8"}
+          ],
+          "conn_max_idle_time": 30,
+          "conn_max_life_time": 30,
+          "max_idle_conns": 1000,
+          "max_open_conns": 5000
+        }
+      ],
+      "write": [
+        {
+          "host": "172.17.12.100",
+          "port": 3306,
+          "username": "root",
+          "password": "root",
+          "database_config": [
+            {"alias": "media", "name": "db_jupiter_media", "charset": "utf8"},
+            {"alias": "video", "name": "db_jupiter_video", "charset": "utf8"},
+            {"alias": "operation", "name": "db_jupiter_operation", "charset": "utf8"}
+          ],
+          "charset": "utf-8",
+          "conn_max_idle_time": 30,
+          "conn_max_life_time": 30,
+          "max_idle_conns": 1000,
+          "max_open_conns": 5000
+        }
+      ]
+    },
+    "redis": {
+      "master": [
+        {
+          "host": "127.0.0.1",
+          "port": 6379,
+          "username": "",
+          "password": "",
+          "db": 0,
+          "idle_timeout": 30,
+          "max_conn_lifetime": 30,
+          "max_idle": 1000,
+          "max_active": 5000
+        }
+      ],
+      "slave": [
+        {
+          "host": "127.0.0.1",
+          "port": 6379,
+          "username": "",
+          "password": "",
+          "db": 0,
+          "idle_timeout": 30,
+          "max_conn_lifetime": 30,
+          "max_idle": 1000,
+          "max_active": 5000
+        }
+      ]
+    }
+  },
+  "log": {
+    "log_file": "tvapi.log",
+    "log_folder_path": "storage/log"
+  },
+  "trace": {
+    "driver": "jeager",
+    "app_name": "tvapi",
+    "open": true,
+    "server_addr": "127.0.0.1:6831"
+  }
+}
