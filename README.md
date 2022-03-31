@@ -67,4 +67,24 @@ E:\Code\Go\pkg\mod\github.com\facebookgo\grace@v0.0.0-20180706040059-75cf1938243
 
 ```
 
+### 依赖包下载失败
+golang在github上建立了一个镜像库，如https://github.com/golang/net就对应是 https://golang.org/x/net的镜像库。 要下载golang.org/x/net包，可以在本地创建包的目录后使用git clone来拉取相应包的源代码文件，具体操作如下
+
+```shell
+
+mkdir -p $GOPATH/src/golang.org/x
+cd $GOPATH/src/golang.org/x
+git clone https://github.com/golang/net.git
+
+安装gopm
+
+go get -u github.com/gpmgo/gopm
+
+使用gopm安装第三方包
+
+不加-g参数，会把依赖包下载.vendor目录下面； 加上-g参数，可以把依赖包下载到GOPATH目录中。
+
+gopm get -g golang.org/x/net
+
+```
 
